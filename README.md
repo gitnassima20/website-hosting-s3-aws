@@ -37,7 +37,7 @@ Both the HTML file and the images are essential for the project. The index.html 
 
 Once the files were uploaded, the next step was to enable Static Website Hosting. This feature allows you to serve the website publicly over the internet.
 
-~~Steps to Enable Static Website Hosting:~~
+~Steps to Enable Static Website Hosting:~
     - Go to the **Properties** tab of your S3 bucket. 
     - Scroll down to the **Static Website Hosting** section
     - Check the option to enable static website hosting.
