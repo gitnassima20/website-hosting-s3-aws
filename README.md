@@ -68,6 +68,8 @@ I adjusted the permissions for the individual files to make them public, which r
 
 After adjusting the permissions for the files inside the bucket, I successfully accessed the website through the bucket endpoint without any issues.
 
+![alt text](screenshots/website-hosted.PNG)
+
 ## Final thoughts:
 
 Hosting a static website on Amazon S3 is a cost-effective and straightforward process. The most challenging aspect of this project was ensuring the correct permissions, but once I understood how ACLs work, it was easy to configure.
