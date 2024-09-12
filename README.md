@@ -53,7 +53,7 @@ In order to make the website publicly accessible, I had to configure Access Cont
 After enabling static website hosting, AWS generated a bucket endpoint URL. This is the public URL through which users can access the website.
 Here’s the bucket endpoint URL for my project: **http://nextwork-website-project-nassimabr.s3-website.eu-west-3.amazonaws.com/**
 
-![alt text](screenshots/bucket-endpoints.PNG)
+![alt text](screenshots/bucket-endpoint.PNG)
 
 ## 2.6 Troubleshooting an Error:
 
