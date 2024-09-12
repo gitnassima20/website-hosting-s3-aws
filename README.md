@@ -59,7 +59,7 @@ Here’s the bucket endpoint URL for my project: **http://nextwork-website-proje
 
 When I first visited the bucket endpoint, I encountered a **403 Forbidden** error. This error occurred because, while the bucket itself was public (due to the ACL settings), the **objects inside the bucket** (HTML and image files) were not yet publicly accessible.
 
-![alt text](../screenshots/403-status.PNG)
+![alt text](screenshots/403-status.PNG)
 
 **Fix:**
 I adjusted the permissions for the individual files to make them public, which resolved the issue.
