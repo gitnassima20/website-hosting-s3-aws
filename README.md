@@ -17,37 +17,36 @@ The overall setup took about **an hour**, largely because I followed a detailed 
 
 ## 2.1 How I Set Up an S3 Bucket:
 
-    Setting up an S3 bucket was quite straightforward and only took about 5 minutes, mostly because I was taking notes along the way. I chose the Europe (**Paris**) region (**eu-west-3**) for my bucket since it is the closest AWS region to Morocco, my location. This ensures lower latency for website visitors in the region.
+Setting up an S3 bucket was quite straightforward and only took about 5 minutes, mostly because I was taking notes along the way. I chose the Europe (**Paris**) region (**eu-west-3**) for my bucket since it is the closest AWS region to Morocco, my location. This ensures lower latency for website visitors in the region.
 
-    ![alt text](../screenshots/bucket-creation.PNG)
+![alt text](../screenshots/bucket-creation.PNG)
 
-    **Key Points:**
-
-    - Unique Bucket Name: S3 bucket names must be globally unique. This means there can only be one bucket with a given name across all AWS accounts, so I chose a specific and descriptive name for my project.
+**Key Points:**
+  - Unique Bucket Name: S3 bucket names must be globally unique. This means there can only be one bucket with a given name across all AWS accounts, so I chose a specific and descriptive name for my project.
 
 ## 2.2 Upload Website Files to S3:
 
-    After setting up the bucket, I uploaded my website files. These consisted of:
-      - **index.html:** The main HTML file of the static website.
-      - **Assets:** A folder containing the images, CSS and JavaScript files required for the website.
-    Both the HTML file and the images are essential for the project. The index.html depends on the images for proper display, so it's important that they are in the correct folder structure.
+After setting up the bucket, I uploaded my website files. These consisted of:
+    - **index.html:** The main HTML file of the static website.
+    - **Assets:** A folder containing the images, CSS and JavaScript files required for the website.
+Both the HTML file and the images are essential for the project. The index.html depends on the images for proper display, so it's important that they are in the correct folder structure.
 
-    ![alt text](../screenshots/objects-upload.PNG)
+![alt text](../screenshots/objects-upload.PNG)
 
 ## 2.3 Static Website Hosting on S3:
 
-     Once the files were uploaded, the next step was to enable Static Website Hosting. This feature allows you to serve the website publicly over the internet.
+Once the files were uploaded, the next step was to enable Static Website Hosting. This feature allows you to serve the website publicly over the internet.
 
-     ~~Steps to Enable Static Website Hosting:~~
-      - Go to the **Properties** tab of your S3 bucket.
-      - Scroll down to the **Static Website Hosting** section
-      - Check the option to enable static website hosting.
+~~Steps to Enable Static Website Hosting:~~
+    - Go to the **Properties** tab of your S3 bucket. 
+    - Scroll down to the **Static Website Hosting** section
+    - Check the option to enable static website hosting.
 
-     Enabling this allows the bucket to serve your website files to visitors as if it were a web server.
+Enabling this allows the bucket to serve your website files to visitors as if it were a web server.
 
 ## 2.4 Access Control Lists (ACLs):
 
-    In order to make the website publicly accessible, I had to configure Access Control Lists (ACLs). ACLs are a set of permissions that dictate who can access certain resources within S3. For this project, I configured the bucket to be publicly accessible, allowing visitors to view the website.
+In order to make the website publicly accessible, I had to configure Access Control Lists (ACLs). ACLs are a set of permissions that dictate who can access certain resources within S3. For this project, I configured the bucket to be publicly accessible, allowing visitors to view the website.
 
 ## 2.5 Bucket Endpoints:
 
@@ -67,7 +66,7 @@ I adjusted the permissions for the individual files to make them public, which r
 
 ## 2.7 Success!:
 
-    After adjusting the permissions for the files inside the bucket, I successfully accessed the website through the bucket endpoint without any issues.
+After adjusting the permissions for the files inside the bucket, I successfully accessed the website through the bucket endpoint without any issues.
 
 ## Final thoughts:
 
