@@ -19,7 +19,7 @@ The overall setup took about **an hour**, largely because I followed a detailed 
 
 Setting up an S3 bucket was quite straightforward and only took about 5 minutes, mostly because I was taking notes along the way. I chose the Europe (**Paris**) region (**eu-west-3**) for my bucket since it is the closest AWS region to Morocco, my location. This ensures lower latency for website visitors in the region.
 
-![alt text](../screenshots/bucket-creation.PNG)
+![alt text](screenshots/bucket-creation.PNG)
 
 **Key Points:**
   - Unique Bucket Name: S3 bucket names must be globally unique. This means there can only be one bucket with a given name across all AWS accounts, so I chose a specific and descriptive name for my project.
@@ -31,7 +31,7 @@ After setting up the bucket, I uploaded my website files. These consisted of:
     - **Assets:** A folder containing the images, CSS and JavaScript files required for the website.
 Both the HTML file and the images are essential for the project. The index.html depends on the images for proper display, so it's important that they are in the correct folder structure.
 
-![alt text](../screenshots/objects-upload.PNG)
+![alt text](screenshots/objects-upload.PNG)
 
 ## 2.3 Static Website Hosting on S3:
 
@@ -53,7 +53,7 @@ In order to make the website publicly accessible, I had to configure Access Cont
 After enabling static website hosting, AWS generated a bucket endpoint URL. This is the public URL through which users can access the website.
 Here’s the bucket endpoint URL for my project: **http://nextwork-website-project-nassimabr.s3-website.eu-west-3.amazonaws.com/**
 
-![alt text](../screens/bucket-endpoints.PNG)
+![alt text](screenshots/bucket-endpoints.PNG)
 
 ## 2.6 Troubleshooting an Error:
 
