@@ -50,32 +50,29 @@ The overall setup took about **an hour**, largely because I followed a detailed 
     In order to make the website publicly accessible, I had to configure Access Control Lists (ACLs). ACLs are a set of permissions that dictate who can access certain resources within S3. For this project, I configured the bucket to be publicly accessible, allowing visitors to view the website.
 
 ## 2.5 Bucket Endpoints:
-   
-   After enabling static website hosting, AWS generated a bucket endpoint URL. This is the public URL through which users can access the website.
-   Here’s the bucket endpoint URL for my project: **http://nextwork-website-project-nassimabr.s3-website.eu-west-3.amazonaws.com/**
 
-   ![alt text](../screens/bucket-endpoints.PNG)
+After enabling static website hosting, AWS generated a bucket endpoint URL. This is the public URL through which users can access the website.
+Here’s the bucket endpoint URL for my project: **http://nextwork-website-project-nassimabr.s3-website.eu-west-3.amazonaws.com/**
+
+![alt text](../screens/bucket-endpoints.PNG)
 
 ## 2.6 Troubleshooting an Error:
-   
-   When I first visited the bucket endpoint, I encountered a **403 Forbidden** error. This error occurred because, while the bucket itself was public (due to the ACL settings), the **objects inside the bucket** (HTML and image files) were not yet publicly accessible.
 
-   ![alt text](../screenshots/403-status.PNG)
+When I first visited the bucket endpoint, I encountered a **403 Forbidden** error. This error occurred because, while the bucket itself was public (due to the ACL settings), the **objects inside the bucket** (HTML and image files) were not yet publicly accessible.
 
-   **Fix:**
-    I adjusted the permissions for the individual files to make them public, which resolved the issue.
+![alt text](../screenshots/403-status.PNG)
+
+**Fix:**
+I adjusted the permissions for the individual files to make them public, which resolved the issue.
 
 ## 2.7 Success!:
-    
+
     After adjusting the permissions for the files inside the bucket, I successfully accessed the website through the bucket endpoint without any issues.
 
 ## Final thoughts:
-   
-   Hosting a static website on Amazon S3 is a cost-effective and straightforward process. The most challenging aspect of this project was ensuring the correct permissions, but once I understood how ACLs work, it was easy to configure.
 
-   This documentation should give a clear picture of how I set up my S3 bucket, uploaded files, enabled static website hosting, and dealt with potential errors.
+Hosting a static website on Amazon S3 is a cost-effective and straightforward process. The most challenging aspect of this project was ensuring the correct permissions, but once I understood how ACLs work, it was easy to configure.
 
-   Special thanks to **https://learn.nextwork.org/** for their guidance throughout this project. Their resources and tutorials were instrumental in helping me understand the process and successfully implement this solution.
+This documentation should give a clear picture of how I set up my S3 bucket, uploaded files, enabled static website hosting, and dealt with potential errors.
 
-
-
+Special thanks to **https://learn.nextwork.org/** for their guidance throughout this project. Their resources and tutorials were instrumental in helping me understand the process and successfully implement this solution.
